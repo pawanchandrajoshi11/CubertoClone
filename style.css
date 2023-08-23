@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+*::selection {
+  background: black;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  background-color: white;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+}
+
+#nav {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav img {
+  width: 100px;
+}
+
+#nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 1vw;
+  /* letter-spacing: 1px; */
+}
+
+#nav #right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#nav i {
+  margin-top: 3px;
+  font-size: 30px;
+}
+
+#home #homemain {
+  width: 100%;
+  /* background-color: red; */
+  padding: 15vw 13vw;
+  position: relative;
+}
+
+#homemain h1 {
+  font-weight: 500px;
+  font-size: 1.5vw;
+  position: relative;
+  z-index: 2;
+}
+
+.headings {
+  display: flex;
+  gap: 40px;
+}
+
+#homemain .headings h1 {
+  font-size: 6vw;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  position: relative;
+  z-index: 1;
+  
+}
+
+#homelast {
+  padding: 2vw 15vw;
+}
+
+#homelast p {
+  font-size: 1.3vw;
+  font-weight: 500;
+  /* letter-spacing: -.05vw; */
+  width: 60%;
+}
+
+#homelast p::selection {
+  background: black;
+  color: white;
+}
+
+#featured {
+  padding: 10vw 15vw;
+
+}
+
+.fheading > h1 {
+  line-height: 1;
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+.fheading > h1:nth-child(1) {
+  position: relative;
+    z-index: 2;
+
+}
+
+
+.fheading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  position: relative;
+  z-index: 1;
+}
+
+#fimages {
+  width: 100%;
+  /* padding: 0vw 15vw; */
+  /* border: 2px solid red; */
+  height: 100vh;
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#fleft {
+  width: 45%;
+  height: inherit;
+  /* border: 1px solid blue; */
+  overflow: hidden;
+}
+
+.fleftelem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+  /* overflow: auto; */
+  /* background-color: beige; */
+}
+
+.fleftelem h1 {
+  font-size: 2.5vw;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1.5vw 0;
+}
+
+.fleftelem h3 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.fleftelem h4 {
+  opacity: 0.5;
+}
+
+#fright {
+  width: 45%;
+  height: inherit;
+  /* border: 1px solid orange; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#fright .images {
+  width: 90%;
+  height: 90%;
+  background-color: red;
+}
+
+.btndiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vw;
+}
+
+.btndiv button {
+  padding: 1.3vw 2.5vw;
+  border-radius: 100px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#dev {
+  width: 100%;
+  padding: 1vw 15vw;
+  /* background-color: beige; */
+}
+
+#dev h1 {
+  font-size: 3.8vw;
+  font-weight: 400;
+  width: 60%;
+  line-height: 1;
+  /* text-transform: capitalize; */
+}
+
+#dev p {
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  letter-spacing: -0.5px;
+  width: 60%;
+}
+
+#slides {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw;
+}
+
+.slide {
+  width: 30%;
+  /* height: 100px; */
+  /* background-color: red; */
+}
+
+.slide h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.slide .img {
+  width: 100%;
+  height: 225px;
+  /* background-color: beige; */
+}
+
+.slide .tag {
+  margin: 20px 0;
+  padding: 10px 22px;
+  width: fit-content;
+  background-color: #f6f6f6;
+  border-radius: 100px;
+}
+
+.slide .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#lastsection {
+  padding: 5vw;
+  padding-left: 15vw;
+  padding-right: 0;
+  margin-top: 3vw;
+  width: 100%;
+}
+
+#cardheading h1 {
+  font-size: 3.8vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#carousal{
+    display: flex;
+    flex-direction: row;
+}
+
+#carousal .card {
+  padding: 8vw 1vw;
+  /* background-color: beige; */
+  width: 30%;
+  height: 100%;
+}
+
+.card .img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.card .instatag {
+  /* margin: 20px 0; */
+  padding: 10px 1px;
+  width: fit-content;
+  /* background-color: #f6f6f6; */
+  border-radius: 100px;
+  opacity: .5;
+  font-size: 1vw;
+}
+
+.card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+     border-radius: 10px;
+}
